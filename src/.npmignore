@@ -1,0 +1,3 @@
+# It is important that this file is not in the root directory.
+# See https://docs.npmjs.com/files/package.json#files for more information
+*.test.js
