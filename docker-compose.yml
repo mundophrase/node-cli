@@ -1,0 +1,9 @@
+version: "3.0"
+services:
+  app:
+    build: "."
+    environment:
+      - GITHUB_TOKEN=${GITHUB_TOKEN:-}
+      - NPM_TOKEN=${NPM_TOKEN:-}
+    volumes:
+      - ./:/home/node/app

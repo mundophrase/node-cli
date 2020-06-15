@@ -1,0 +1,43 @@
+{
+  "name": "@mundophrase/cli",
+  "version": "0.0.0-development",
+  "description": "MundoPhrase CLI application",
+  "main": "src/index.js",
+  "bin": {
+    "mundophrase": "src/index.js"
+  },
+  "files": [
+    "/src"
+  ],
+  "scripts": {
+    "debug:publish": "npm publish --access public --dry-run",
+    "debug:release": "npx semantic-release --dry-run",
+    "release": "npx semantic-release",
+    "start": "node src/index.js",
+    "test": "npm run test:lint && npm run test:vulnerabilities && npm run test:scripts",
+    "test:lint": "eslint --ext .js .",
+    "test:scripts": "jest --coverage",
+    "test:vulnerabilities": "npm audit --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mundophrase/node-cli.git"
+  },
+  "author": "Hendrik Volschenk <hendrik@mundophrase.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mundophrase/node-cli/issues"
+  },
+  "homepage": "https://github.com/mundophrase/node-cli#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "yargs": "^15.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.21.2",
+    "jest": "^26.0.1",
+    "semantic-release": "^17.0.8"
+  }
+}
