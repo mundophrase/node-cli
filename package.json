@@ -3,6 +3,9 @@
   "version": "0.0.0-development",
   "description": "MundoPhrase CLI application",
   "main": "src/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "bin": {
     "mundophrase": "src/index.js"
   },
