@@ -2,14 +2,15 @@
   "name": "@mundophrase/cli",
   "version": "0.0.0-development",
   "description": "MundoPhrase CLI application",
-  "main": "src/index.js",
+  "main": "bin/index.js",
   "publishConfig": {
     "access": "public"
   },
   "bin": {
-    "mundophrase": "src/index.js"
+    "mundophrase": "bin/index.js"
   },
   "files": [
+    "/bin",
     "/src"
   ],
   "scripts": {
