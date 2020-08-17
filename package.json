@@ -21,7 +21,7 @@
     "test": "npm run test:lint && npm run test:vulnerabilities && npm run test:scripts",
     "test:lint": "eslint --ext .js .",
     "test:scripts": "jest --coverage",
-    "test:vulnerabilities": "npm audit --production"
+    "test:vulnerabilities": "npm audit"
   },
   "repository": {
     "type": "git",
@@ -34,14 +34,14 @@
   },
   "homepage": "https://github.com/mundophrase/node-cli#readme",
   "dependencies": {
-    "axios": "^0.19.2",
-    "yargs": "^15.3.1"
+    "axios": "^0.20.0",
+    "yargs": "^15.4.1"
   },
   "devDependencies": {
-    "eslint": "^7.2.0",
+    "eslint": "^7.8.1",
     "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-plugin-import": "^2.21.2",
-    "jest": "^26.0.1",
-    "semantic-release": "^17.0.8"
+    "eslint-plugin-import": "^2.22.0",
+    "jest": "^26.4.2",
+    "semantic-release": "^17.1.1"
   }
 }
