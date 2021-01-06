@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/mundophrase/node-cli#readme",
   "dependencies": {
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "yargs": "^15.4.1"
   },
   "devDependencies": {
