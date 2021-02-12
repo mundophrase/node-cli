@@ -114,12 +114,6 @@ Build the container (`app`):
 $ docker-compose build
 ```
 
-Install dependencies (they are volume mounted into the container):
-
-```sh
-$ docker-compose run --rm app npm install
-```
-
 ### Testing
 [Testing]: #testing
 
@@ -134,6 +128,8 @@ or without _Docker_:
 ```sh
 $ npm test
 ```
+
+_If you choose this option you will have to `npm install` locally first._
 
 #### Linting
 [Linting]: #linting
