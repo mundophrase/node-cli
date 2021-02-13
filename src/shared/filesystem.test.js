@@ -61,12 +61,12 @@ describe('Remove a directory', () => {
 
 describe('Create a file', () => {
   test('Successfully', async () => {
-    const result = await fileCreate({ path: './tmp/file' });
+    const result = await fileCreate({ data: 'data', path: './tmp/file' });
     expect(result).toBe(undefined);
   });
 
   test('Failure', async () => {
-    const shouldThrow = () => fileCreate({ path: '../../../../../../../../no-way' });
+    const shouldThrow = () => fileCreate({ data: 'data', path: '../../../../../../../../no-way' });
     await expect(shouldThrow).rejects.toThrow();
   });
 });

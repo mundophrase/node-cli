@@ -1,0 +1,11 @@
+.cache/
+.config/
+.npm/
+
+coverage/
+node_modules/
+
+.ash_history
+Dockerfile*
+
+README.md

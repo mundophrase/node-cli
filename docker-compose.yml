@@ -6,4 +6,5 @@ services:
       - GITHUB_TOKEN=${GITHUB_TOKEN:-}
       - NPM_TOKEN=${NPM_TOKEN:-}
     volumes:
-      - ./:/home/node/app
+      - ./:/home/node/application/app:delegated
+      - /home/node/application/app/node_modules/
