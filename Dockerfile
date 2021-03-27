@@ -2,7 +2,7 @@
 FROM node:fermium-alpine
 
 # The home directory for the `node` user
-ENV HOME /home/node/app
+ENV HOME /home/node
 # Because `node_modules` will be a level above the application,
 # set the path of where `node_modules` will be located
 ENV NODE_PATH $HOME/application/node_modules
