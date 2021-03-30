@@ -46,6 +46,9 @@ The _API Key_ for your _Project_ on [MundoPhrase][].
 Please keep this value safe, it is highly discouraged to store this value in
 version-control.
 
+It is also possible to specify this value through the `MUNDOPHRASE_API_KEY`
+environment variable.
+
 ### Commands
 [Commands]: #commands
 

@@ -42,6 +42,26 @@ describe('get', () => {
     });
   });
 
+  describe('Single language, android (env API Key)', () => {
+    beforeAll(async () => {
+      getProjectLocalizations.mockResolvedValue({
+        data: 'data',
+        headers: { 'content-language': 'nl-NL' },
+      });
+      process.env.MUNDOPHRASE_API_KEY = 'API_KEY';
+      await executeCommand('get -f android -l nl-NL -o ./tmp/test');
+    });
+
+    afterAll(() => {
+      delete process.env.MUNDOPHRASE_API_KEY;
+    });
+
+    test('Creates the file', async () => {
+      const data = await fileRead({ path: './tmp/test/nl-NL.xml' });
+      expect(data).toBe('data');
+    });
+  });
+
   describe('Multiple languages, json', () => {
     const localeItemValues = [
       { key: 'key_one', value: 'value_one' },
