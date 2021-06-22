@@ -11,8 +11,7 @@
   },
   "files": [
     "/bin",
-    "/src",
-    "README.md"
+    "/src"
   ],
   "scripts": {
     "debug:publish": "npm publish --access public --dry-run",
